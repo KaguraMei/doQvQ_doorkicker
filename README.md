@@ -4,7 +4,7 @@ This directory is a static mirror of `https://nuojiji.pages.dev/`, adjusted to r
 
 ## What was changed
 
-- Root-relative asset links were converted to relative links.
+- Root-relative asset links were converted to relative links. 
 - The runtime preload helper now resolves asset URLs from `document.baseURI`.
 - Service worker auto-registration was disabled to avoid broken cache manifests from the original deployment.
 - A minimal no-op `sw.js` was added so direct service worker requests stay harmless.
