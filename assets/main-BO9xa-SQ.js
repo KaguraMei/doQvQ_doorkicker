@@ -79702,55 +79702,7 @@ const Tw = ["nuojiji.app", "www.nuojiji.app", "pb.nuojiji.app", "nuojiji.pages.d
 const $w = [".nuojiji.pages.dev"];
 const Lw = new Set(["localhost", "127.0.0.1", "[::1]", ""]);
 const Mw = "https://nuojiji.app/";
-const Rw = function () {
-  try {
-    if (typeof window == "undefined") {
-      return false;
-    }
-    if (function () {
-      try {
-        return typeof window != "undefined" && !!window.Capacitor && typeof window.Capacitor.isNativePlatform == "function" && !!window.Capacitor.isNativePlatform();
-      } catch (rC) {
-        return false;
-      }
-    }()) {
-      return false;
-    }
-    try {
-      import.meta;
-    } catch (rC) {}
-    const e = window.location.hostname;
-    return !function (e) {
-      const t = String(e || "").toLowerCase();
-      if (Lw.has(t)) {
-        return true;
-      }
-      if (Tw.includes(t)) {
-        return true;
-      }
-      for (const n of $w) {
-        if (t.endsWith(n)) {
-          return true;
-        }
-      }
-      return false;
-    }(e) && (console.warn("[DomainGuard] 偵測到非授權域名鏡像:", e), function (e) {
-      try {
-        const t = `\n            <div style="font-family:system-ui,-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;\n                        min-height:100vh;display:flex;flex-direction:column;align-items:center;\n                        justify-content:center;text-align:center;padding:32px 24px;\n                        background:#FFF5F7;color:#3a3a3a">\n                <div style="font-size:48px;margin-bottom:8px">🍡</div>\n                <h1 style="font-size:22px;margin:0 0 12px;font-weight:700">這是糯嘰機的非官方鏡像站</h1>\n                <p style="font-size:15px;color:#666;line-height:1.7;max-width:420px;margin:0 0 8px">\n                    你正在訪問的網址（<code style="background:#fde2e8;padding:2px 6px;border-radius:5px">${e}</code>）\n                    並非糯嘰機官方站點，而是有人未經授權複製的鏡像。\n                </p>\n                <p style="font-size:15px;color:#666;line-height:1.7;max-width:420px;margin:0 0 24px">\n                    鏡像站無法正常登入與使用，且可能不安全。請前往官方站點：\n                </p>\n                <a href="${Mw}" rel="noopener"\n                   style="display:inline-block;padding:13px 30px;background:#FFB7C5;color:#fff;\n                          border-radius:10px;text-decoration:none;font-weight:700;font-size:16px;\n                          box-shadow:0 4px 14px rgba(255,183,197,.45)">\n                    前往官方糯嘰機 →\n                </a>\n                <p style="font-size:12px;color:#aaa;margin-top:28px">\n                    © 2026 糯嘰機 Nuojiji · 版權所有，禁止鏡像轉載\n                </p>\n            </div>`;
-        document.documentElement.innerHTML = `<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>糯嘰機 · 請前往官方站點</title></head><body style="margin:0">${t}</body>`;
-      } catch (rC) {}
-      try {
-        setTimeout(() => {
-          try {
-            window.location.replace(Mw);
-          } catch (rC) {}
-        }, 5000);
-      } catch (rC) {}
-    }(e), true);
-  } catch (rC) {
-    return false;
-  }
-}();
+const Rw = false;
 const Fw = "nuojiji-chunk-reload-count";
 if (typeof window != "undefined") {
   window.__nuojijiMainScriptStarted = true;
