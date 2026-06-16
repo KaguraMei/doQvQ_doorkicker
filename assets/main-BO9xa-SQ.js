@@ -80347,8 +80347,8 @@ if (h()) {
               };
             }, []).then(({
               Workbox: e
-            }) => new e("/sw.js", {
-              scope: "/",
+            }) => new e("./sw.js", {
+              scope: "./",
               type: "classic"
             })).catch(e => {
               if (a != null) {
@@ -80397,7 +80397,7 @@ if (h()) {
               immediate: t
             }).then(e => {
               if (o) {
-                o("/sw.js", e);
+                o("./sw.js", e);
               } else if (i != null) {
                 i(e);
               }
