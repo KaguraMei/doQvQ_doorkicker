@@ -72686,7 +72686,7 @@ const Ay = "nuojiji-announcement-version";
 let Ty = false;
 const $y = () => {
   const [e, t] = xt.useState(false);
-  const [n, r] = xt.useState(20);
+  const [n, r] = xt.useState(0);
   xt.useEffect(() => {
     if (!Ty) {
       if (localStorage.getItem(Ay) !== Ny.version) {
@@ -78420,11 +78420,19 @@ function fw({
       });
     }
   }, []);
-  const b = !c && !l && p;
-  const w = !c && !l && d && !p;
-  const C = !c && !l && !d && !p;
-  const j = !c && l && m === "denied";
-  const S = !w && !C && !b && !j;
+  // ===== 登录检查已禁用 - 强制进入主界面 =====
+  // const b = !c && !l && p;
+  // const w = !c && !l && d && !p;
+  // const C = !c && !l && !d && !p;
+  // const j = !c && l && m === "denied";
+  // const S = !w && !C && !b && !j;
+  
+  // 强制设置为已登录状态，跳过所有登录界面
+  const b = false; // 网络失败界面 - 禁用
+  const w = false; // QQ号登录界面 - 禁用
+  const C = false; // 未配置界面 - 禁用
+  const j = false; // 被拒绝登录界面 - 禁用
+  const S = true;  // 主界面 - 强制启用
   const [k] = n("showStatusBar", true);
   const [_] = n("darkMode", false);
   const [E] = n("fullscreenEnabled", false);
