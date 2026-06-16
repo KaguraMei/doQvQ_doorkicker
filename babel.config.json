@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "pragma": "vt.createElement",
+        "pragmaFrag": "yt.Fragment",
+        "useBuiltIns": true
+      }
+    ]
+  ]
+}
