@@ -35,9 +35,9 @@
   <link rel="dns-prefetch" href="https://pic1.imgdb.cc" />
 
   <!-- Favicon for browsers -->
-  <link rel="icon" type="image/png" sizes="512x512" href="/doQvQ_doorkicker/pwa-512x512.png?v=2" />
-  <link rel="icon" type="image/png" href="/doQvQ_doorkicker/pwa-512x512.png?v=2" />
-  <link rel="shortcut icon" href="/doQvQ_doorkicker/pwa-512x512.png?v=2" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./pwa-512x512.png?v=2" />
+  <link rel="icon" type="image/png" href="./pwa-512x512.png?v=2" />
+  <link rel="shortcut icon" href="./pwa-512x512.png?v=2" />
 
   <!-- theme-color：部分 Android WebView 不支援 rgba 透明，會 fallback 成純黑導致系統狀態列「全黑什麼都看不到」
        改為提供深淺兩個 media-queried 預設值，並由下方 inline script 根據用戶 darkMode 偏好覆寫
@@ -134,7 +134,7 @@
         // VivoBrowser/HeyTapBrowser 為 ROM 自帶瀏覽器；
         // Redmi/HUAWEI/HONOR/OPPO/vivo/realme 為設備型號標識
         var isCnRom = /MIUI|HarmonyOS|EMUI|HUAWEI|HONOR|HONORBrowser|VivoBrowser|HeyTapBrowser|HeyTap|\bOPPO\b|\bvivo\b|Redmi|XiaoMi|realme|Meizu/i.test(ua);
-        var href = isCnRom ? '/doQvQ_doorkicker/manifest-cn.webmanifest' : '/doQvQ_doorkicker/manifest.webmanifest';
+        var href = isCnRom ? './manifest-cn.webmanifest' : './manifest.webmanifest';
         var link = document.createElement('link');
         link.rel = 'manifest';
         link.href = href;
@@ -146,32 +146,32 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="糯嘰機" />
-  <link rel="apple-touch-icon" href="/doQvQ_doorkicker/pwa-512x512.png?v=2" />
+  <link rel="apple-touch-icon" href="./pwa-512x512.png?v=2" />
 
   <!-- iOS 啟動畫面 - 使用 pwa-512x512.png 作為啟動圖像 -->
   <!-- iPhone X/XS/11 Pro (1125x2436) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
   <!-- iPhone XS Max/11 Pro Max (1242x2688) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)">
   <!-- iPhone XR/11 (828x1792) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)">
   <!-- iPhone 12/12 Pro/13/13 Pro/14 (1170x2532) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
   <!-- iPhone 12/13/14 Pro Max (1284x2778) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)">
   <!-- iPhone 14 Pro (1179x2556) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)">
   <!-- iPhone 14 Pro Max (1290x2796) -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2"
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2"
     media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">
   <!-- 通用回退 -->
-  <link rel="apple-touch-startup-image" href="/doQvQ_doorkicker/pwa-512x512.png?v=2">
+  <link rel="apple-touch-startup-image" href="./pwa-512x512.png?v=2">
 
   <!-- Google Fonts 已全部移除：
        - Latin 字體（Cinzel/Montserrat/Cormorant/Dancing Script/Playfair Display 等）
@@ -304,18 +304,18 @@
     }
 
   </style>
-  <script type="module" crossorigin src="/doQvQ_doorkicker/assets/main-BO9xa-SQ.js"></script>
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/modulepreload-polyfill-YP0FEG5d.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/vendor-react-B2VXkTUV.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/vendor-dexie-KLdnSHz2.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/vendor-jszip-DU-5YDGO.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/vendor-lucide-DBv09HTV.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/native-pet-CTNtZgMA.js">
-  <link rel="modulepreload" crossorigin href="/doQvQ_doorkicker/assets/vendor-supabase-Bcpm_8qV.js">
-  <link rel="stylesheet" crossorigin href="/doQvQ_doorkicker/assets/native-pet-D9YoqRtr.css">
-  <link rel="stylesheet" crossorigin href="/doQvQ_doorkicker/assets/main-C4gkqfD0.css">
-  <link rel="stylesheet" crossorigin href="/doQvQ_doorkicker/assets/NotificationBar-y-kP9VHv.css">
-  <link rel="stylesheet" crossorigin href="/doQvQ_doorkicker/assets/vendor-fonts-BglBY6By.css">
+  <script type="module" crossorigin src="./assets/main-BO9xa-SQ.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-YP0FEG5d.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-react-B2VXkTUV.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-dexie-KLdnSHz2.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-jszip-DU-5YDGO.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-lucide-DBv09HTV.js">
+  <link rel="modulepreload" crossorigin href="./assets/native-pet-CTNtZgMA.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-supabase-Bcpm_8qV.js">
+  <link rel="stylesheet" crossorigin href="./assets/native-pet-D9YoqRtr.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-C4gkqfD0.css">
+  <link rel="stylesheet" crossorigin href="./assets/NotificationBar-y-kP9VHv.css">
+  <link rel="stylesheet" crossorigin href="./assets/vendor-fonts-BglBY6By.css">
 </head>
 
 <body class="app-loading">

@@ -79757,7 +79757,7 @@ const Ow = e => {
     return false;
   }
   const n = String(e.stack || "");
-  return !!/\/assets\/[^\s"']+\.js/.test(n) && (!!/Cannot access '[^']*' before initialization/.test(t) || !!t.includes("before initialization") || !!t.includes("uninitialized variable") || !!t.includes("Unexpected token '<'") || !!t.includes("Unexpected token <") || !!t.includes("expected expression, got '<'")) || t.includes("Failed to fetch dynamically imported module") || t.includes("error loading dynamically imported module") || t.includes("Importing a module script failed") || t.includes("Failed to fetch") && t.includes(".js") || t.includes("Loading chunk") || t.includes("Loading CSS chunk") || t.includes("is not a valid JavaScript MIME type") || t.includes("Expected a JavaScript module") || t.includes("disallowed MIME type") || t.includes("strict MIME type checking") || e.name === "TypeError" && e.message === "Failed to fetch" || e.name === "ChunkLoadError" || t.includes("_result.default") || t.includes("Unexpected EOF") || t.includes("Unexpected end of") || t.includes("got end of script") || /Cannot read propert(?:y|ies) of null \(reading '(?:useEffect|useMemo|useState|useRef|useCallback|useContext|useReducer|useLayoutEffect|useImperativeHandle|useDebugValue|useId|useTransition|useDeferredValue|useSyncExternalStore|useInsertionEffect)'\)/.test(t);
+  return !!/\.\/assets\/[^\s"']+\.js/.test(n) && (!!/Cannot access '[^']*' before initialization/.test(t) || !!t.includes("before initialization") || !!t.includes("uninitialized variable") || !!t.includes("Unexpected token '<'") || !!t.includes("Unexpected token <") || !!t.includes("expected expression, got '<'")) || t.includes("Failed to fetch dynamically imported module") || t.includes("error loading dynamically imported module") || t.includes("Importing a module script failed") || t.includes("Failed to fetch") && t.includes(".js") || t.includes("Loading chunk") || t.includes("Loading CSS chunk") || t.includes("is not a valid JavaScript MIME type") || t.includes("Expected a JavaScript module") || t.includes("disallowed MIME type") || t.includes("strict MIME type checking") || e.name === "TypeError" && e.message === "Failed to fetch" || e.name === "ChunkLoadError" || t.includes("_result.default") || t.includes("Unexpected EOF") || t.includes("Unexpected end of") || t.includes("got end of script") || /Cannot read propert(?:y|ies) of null \(reading '(?:useEffect|useMemo|useState|useRef|useCallback|useContext|useReducer|useLayoutEffect|useImperativeHandle|useDebugValue|useId|useTransition|useDeferredValue|useSyncExternalStore|useInsertionEffect)'\)/.test(t);
 };
 const Bw = "nuojiji:chunk-load-error";
 const zw = "nuojiji-native-chunk-recover";
@@ -79807,7 +79807,7 @@ window.addEventListener("unhandledrejection", e => {
 window.addEventListener("error", e => {
   if (e.target && (e.target.tagName === "SCRIPT" || e.target.tagName === "LINK")) {
     const t = e.target.src || e.target.href || "";
-    if (t.includes("/assets/") || t.endsWith(".js") || t.endsWith(".css")) {
+    if (t.includes("./assets/") || t.endsWith(".js") || t.endsWith(".css")) {
       console.error("[PWA] 資源加載失敗:", t);
       Uw("resource-error", t);
     }
@@ -80347,8 +80347,8 @@ if (h()) {
               };
             }, []).then(({
               Workbox: e
-            }) => new e("/doQvQ_doorkicker/sw.js", {
-              scope: "/doQvQ_doorkicker/",
+            }) => new e("./sw.js", {
+              scope: "./",
               type: "classic"
             })).catch(e => {
               if (a != null) {
@@ -80397,7 +80397,7 @@ if (h()) {
               immediate: t
             }).then(e => {
               if (o) {
-                o("/doQvQ_doorkicker/sw.js", e);
+                o("./sw.js", e);
               } else if (i != null) {
                 i(e);
               }
