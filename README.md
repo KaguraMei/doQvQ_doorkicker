@@ -1,38 +1,384 @@
-# Nuojiji GitHub Pages Mirror
+# Nuojiji - Local Deployment and Packaging
 
-This directory is a static mirror of `https://nuojiji.pages.dev/`, adjusted to run on GitHub Pages.
+This is a static website mirror of Nuojiji, supporting local development, PWA installation, and packaging into an Android APK.
 
-## What was changed
+## 🌟 Project Features
 
-- Root-relative asset links were converted to relative links. 
-- The runtime preload helper now resolves asset URLs from `document.baseURI`.
-- Service worker auto-registration was disabled to avoid broken cache manifests from the original deployment.
-- A minimal no-op `sw.js` was added so direct service worker requests stay harmless.
-- `.nojekyll` was added so GitHub Pages serves the mirrored static files directly.
+- ✅ Complete static website (from https://nuojiji.pages.dev/)
 
-## Deploy
+- ✅ PWA support (can be installed on desktop/home screen)
 
-1. Create a GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. Push to the `main` branch.
-4. In GitHub, open `Settings -> Pages`.
-5. Set `Build and deployment` to `Deploy from a branch`.
-6. Choose branch `main` and folder `/ (root)`.
-7. Save and wait for the site to publish.
+- ✅ Capacitor configuration (can package Android/iOS App)
 
-## Local Development
+- ✅ All resources are localized (fonts, icons, audio)
 
-### Quick Start (Windows)
-Double-click `start-server.bat` to launch a local development server.
+- ✅ Relative path adaptation (supports subdirectory deployment)
 
-### Manual Start
-```bash
-npx serve .
+---
+
+## 📱 Quick Start
+
+### Method 1: Local Preview (Web)
+
+**Windows Users:**
+
+```cmd` Double-click to run: one-click start.bat
+
 ```
 
-Then open your browser to the URL shown in the terminal (usually `http://localhost:3000`).
+**Command Line:**
 
-## Notes
+```bash` npx serve .
 
-- This is a mirrored production build, not the original source code.
-- If the upstream site updates, you will need to mirror it again to stay in sync.
+```
+
+Then open `http://localhost:3000` in your browser
+
+### Method 2: Install as PWA
+
+1. Open the website in your browser
+
+2. **Desktop Chrome**: Click the ⊕ install icon on the right side of the address bar
+
+3. **Mobile Phone Chrome**: Click the "Add to Home Screen" banner at the bottom
+
+4. **iOS Safari**: Click the share button → "Add to Home Screen"
+
+### Method 3: Package as an Android APK
+
+See the [Packaging Android APK](#-Packaging-android-apk) section below for details.
+
+---
+
+## 🌐 Deploy to a Server
+
+### GitHub Pages
+
+1. Create a GitHub repository
+
+2. Upload all files in this directory to the repository root directory
+
+3. Push to the `main` branch
+
+4. In the GitHub repository settings: `Settings → Pages`
+
+5. Select `Deploy from a branch` → `main` branch → `/ (root)` directory
+
+6. Save and wait for deployment to complete
+
+### Other Static Hosting
+
+Supports any static hosting service:
+
+- Vercel
+
+- Netlify
+
+- Cloudflare Pages
+
+- Self-hosted server (Nginx/Apache)
+
+**Note**: All resources use relative paths; subdirectory deployment is supported.
+
+---
+## ✅ Completed Optimizations
+
+### 1. Full PWA Support
+
+- ✅ Added icons for `pwa-192x192.png` and `pwa-512x512.png`
+
+- ✅ Fixed icon path in manifest.webmanifest
+
+- ✅ All paths changed to relative paths (`./` instead of `/`)
+
+### 2. Resource Localization
+
+- ✅ Font files downloaded to the `assets/` directory
+
+- Montserrat (400/600 character weight)
+
+- Cinzel (700 character weight)
+
+- ✅ Complete audio files
+
+- sent.mp3 (sending tone)
+
+- incoming.mp3 (receiving tone)
+
+- outgoing.mp3 (sending tone)
+
+- notification.mp3 (notification tone)
+
+- woodfish.mp3 (woodfish tone)
+
+- ✅ PWA icon files
+
+- ✅ Cover image (nuojiji_comeback_cover.webp)
+
+### 3. Path Fixes
+
+- ✅ All absolute paths (`/xxx`) in JS have been changed to relative paths (`./xxx`)
+
+- ✅ CSS font paths now use relative paths
+
+- ✅ Support for deployment in subdirectories (e.g., `/subfolder/`)
+
+---
+
+---
+
+## 📱 Packaging Android APK
+
+This project is configured with Capacitor, which can package it into a native Android app.
+
+### Prerequisites
+
+1. **Node.js** (Installed ✓)
+
+2. **Android Studio**
+
+- Download: https://developer.android.com/studio
+
+- Launch once after installation to download the Android SDK
+
+### Three-Step Packaging
+
+#### Step 1: Synchronize Static Files to Capacitor
+
+```cmd` Double-click to run: sync-to-www.bat
+
+```
+Or command line:
+
+```bash` npm run sync
+
+```
+This will copy all files to the `www/` directory and synchronize them to the Android project.
+
+#### Step 2: Open Android Studio
+
+```cmd` Double-click to run: Open AndroidStudio.bat
+
+```
+Or command line:
+
+```bash` `npx cap open android`
+
+```
+
+#### Step 3: Compile APK
+
+In Android Studio:
+
+1. Wait for Gradle synchronization to complete (approximately 5-10 minutes for the first time)
+
+2. Click the menu: `Build → Build Bundle(s) / APK(s) → Build APK(s)`
+
+3. Wait for compilation to complete
+
+4. Click "locate" in the lower right corner notification to find the APK
+
+**APK location:**
+
+```android/app/build/outputs/apk/debug/app-debug.apk
+
+```
+
+### Native Features
+
+The packaged app supports all native features:
+
+- ✅ Haptics
+
+- ✅ Open external browser
+
+- ✅ Status Bar Control
+
+- ✅ Local Notifications
+
+- ✅ App Lifecycle
+
+The `window.Capacitor.Plugins` API in the code will work automatically and requires no modification.
+
+### Update the Application
+
+Repackage after website updates:
+
+1. Replace static files in the root directory
+
+2. Run `sync-to-www.bat`
+
+3. Rebuild in Android Studio
+
+### Capacitor Configuration
+
+Configuration file: `capacitor.config.json`
+
+Key configurations:
+
+- `appId: "app.nuojiji"` - Application package name
+
+- `appName: "糯叽机"` - Application name
+
+- `webDir: "www"` - Web resource directory
+
+- `server.hostname: "nuojiji.app"` - CORS spoofed domain
+
+---
+
+## 🔧 Common Issues
+
+### PWA Installation Failure
+
+**Symptoms**: No installation icon in browser address bar
+
+**Solutions**:
+
+1. Confirm file existence:
+
+```
+pwa-192x192.png ✓
+
+pwa-512x512.png ✓
+
+```
+2. Clear browser cache:
+
+- F12 → Application → Storage → Clear site data
+
+3. Force refresh: Ctrl+Shift+R
+
+4. Check console errors: F12 → Console
+
+### Android Packaging White Screen
+
+**Cause**: Files not synchronized to `www/` directory
+
+**Solution**:
+
+```cmd sync-to-www.bat
+
+```
+
+### Font/Audio Loading Failure
+
+**Cause**: File path problem
+
+**Confirmation**:
+
+- All paths have been changed to relative paths (`./xxx`)
+
+- Files are in the correct location (root directory or `assets/`)
+
+### Cross-Origin (CORS) Error
+
+**Cause**: Backend restricts request origin
+
+**Solution**:
+
+- Capacitor is configured to masquerade as `https://nuojiji.app`
+
+- If the problem persists, contact the backend administrator
+
+---
+
+## 📂 Project Structure
+
+```
+nuojiji_local/
+
+├── android/ # Android native project (generated by Capacitor)
+
+├── assets/ # Static resources
+
+│ ├── main-BO9xa-SQ.js # Main JS file (path fixed)
+
+│ ├── *.css # Style files
+
+│ ├── *.woff2 # Font files (localized)
+
+│ └── ...
+
+├── www/ # Capacitor web directory (synchronization target)
+
+├── capacitor.config.json # Capacitor configuration
+
+├── index.html # Entry page
+
+├── manifest.webmanifest # PWA manifest
+
+├── pwa-192x192.png # PWA icon 192x192
+
+├── pwa-512x512.png # PWA icon 512x512
+
+├── *.mp3 # Audio files
+
+├── sync-to-www.bat # File Synchronization Script
+
+├── Open AndroidStudio.bat # Android Studio startup script
+
+├── One-click Startup.bat # Local server startup script
+
+└── README.md # This file
+
+```
+
+---
+
+## 📚 Related Documents
+
+- [Capacitor Official Documentation](https://capacitorjs.com/docs)
+
+- [PWA Development Guide](https://web.dev/progressive-web-apps/)
+
+- [Android Development Documentation](https://developer.android.com)
+
+---
+
+## 🎯 Checklist
+
+Pre-deployment Confirmations:
+
+- [ ] All PWA icons exist (192x192 and 512x512)
+
+- [ ] All audio files are complete (5 mp3s)
+
+- [ ] Font files are in the assets/ directory
+
+- [ ] The manifest.webmanifest path is correct
+
+- [ ] Test PWA Install Features
+
+- [ ] Test after clearing browser cache
+
+Confirm before packaging:
+
+- [ ] `sync-to-www.bat` has been run
+
+- [ ] Complete files exist in the `www/` directory
+
+- [ ] Android Studio is installed
+
+- [ ] Gradle synchronization successful
+
+---
+
+## 💡 Tips
+
+- First-time Android compilation requires downloading Gradle and dependencies. Please wait patiently.
+
+- Debug APKs are large and have poor performance. Use the Release version for publishing.
+
+- PWAs require HTTPS or localhost to install.
+
+- You can delete the `capacitor-app/` directory (if it exists, it's from a previous test version).
+
+---
+
+**Enjoy using it!** 🎉
+
+For any questions, please see:
+
+- Packaging Guide.md (Detailed Android packaging tutorial)
+
+- BYPASS_LOGIN_CHANGES.md (Login related instructions)

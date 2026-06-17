@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "sw-handlers.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "node -e \"require('child_process').execSync('sync-to-www.bat', {stdio:'inherit'})\"",
+    "android": "npx cap open android",
+    "cap:sync": "npx cap sync",
+    "cap:build": "npm run sync && npx cap sync"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +17,15 @@
     "@babel/cli": "^7.29.7",
     "@babel/core": "^7.29.7",
     "@babel/preset-react": "^7.29.7"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/browser": "^8.0.3",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/local-notifications": "^8.2.0",
+    "@capacitor/status-bar": "^8.0.2"
   }
 }

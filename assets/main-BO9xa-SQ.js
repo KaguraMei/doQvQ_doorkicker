@@ -1605,7 +1605,7 @@ async function Wr({
         await i.showNotification(e, {
           body: t || "",
           tag: n,
-          icon: r || "/pwa-512x512.png",
+          icon: r || "./pwa-512x512.png",
           vibrate: a || [200, 100, 200],
           data: o || {}
         });
@@ -1614,7 +1614,7 @@ async function Wr({
       new Notification(e, {
         body: t || "",
         tag: n,
-        icon: r || "/pwa-512x512.png",
+        icon: r || "./pwa-512x512.png",
         data: o || {}
       });
       return true;
@@ -1956,7 +1956,7 @@ const Yr = ({
   }, [N, T, $, M, A, L]);
   xt.useEffect(() => {
     if (L && $) {
-      const e = M || "/sent.mp3";
+      const e = M || "./sent.mp3";
       O.current ||= new Audio();
       const t = O.current;
       if (t.getAttribute("data-src") !== e) {
@@ -2053,7 +2053,7 @@ const Yr = ({
     let t = null;
     if (R.current && !(f == null ? undefined : f.silent)) {
       t = setTimeout(() => {
-        U(F, "/notification.mp3");
+        U(F, "./notification.mp3");
       }, 180);
     }
     a.current = setTimeout(() => {
@@ -2161,7 +2161,7 @@ const Yr = ({
           }, ...t]);
         }
         if (R.current && !(i == null ? undefined : i.silent)) {
-          U(F, "/notification.mp3");
+          U(F, "./notification.mp3");
         }
         return;
       }
@@ -2215,7 +2215,7 @@ const Yr = ({
         const n = "Notification" in window && Notification.permission === "granted";
         if (e && (t || n)) {
           const e = i.avatar || "";
-          const t = e.startsWith("blob:") || e.startsWith("data:") ? "/pwa-512x512.png" : e || "/pwa-512x512.png";
+          const t = e.startsWith("blob:") || e.startsWith("data:") ? "./pwa-512x512.png" : e || "./pwa-512x512.png";
           const n = i.groupId ? `nuojiji-group-${i.groupId}-${Date.now()}` : `nuojiji-msg-${i.charId || "global"}-${Date.now()}`;
           const r = (() => {
             try {
@@ -2266,12 +2266,12 @@ const Yr = ({
       } = e.detail;
       if (t === "receive") {
         if (R.current) {
-          U(F, "/notification.mp3");
+          U(F, "./notification.mp3");
         }
       } else if (t === "send" && P.current) {
         O.current ||= new Audio();
         const e = O.current;
-        const t = D.current || "/sent.mp3";
+        const t = D.current || "./sent.mp3";
         if (e.getAttribute("data-src") !== t) {
           e.src = t;
           e.setAttribute("data-src", t);
@@ -7288,7 +7288,7 @@ const oo = ({
   const l = xt.useRef(0);
   const c = xt.useRef(null);
   xt.useEffect(() => {
-    c.current = new Audio("/woodfish.mp3");
+    c.current = new Audio("./woodfish.mp3");
     c.current.load();
   }, []);
   return yt.jsxs("div", {
@@ -13264,7 +13264,7 @@ const ga = ({
     minutes: 0
   });
   const o = t.startDate || localStorage.getItem("nuojiji_companion_start_date");
-  const a = t.avatarImage || "/pwa-192x192.png";
+  const a = t.avatarImage || "./pwa-192x192.png";
   xt.useEffect(() => {
     if (!o) {
       const e = new Date().toISOString();
@@ -43724,9 +43724,9 @@ const ad = ({
       }
     }
     if (e === "incoming") {
-      r.push(L("incoming.mp3"), "/incoming.mp3", L("notification.mp3"), "/notification.mp3");
+      r.push(L("incoming.mp3"), "./incoming.mp3", L("notification.mp3"), "./notification.mp3");
     } else {
-      r.push(L("outgoing.mp3"), "/outgoing.mp3", L("sent.mp3"), "/sent.mp3");
+      r.push(L("outgoing.mp3"), "./outgoing.mp3", L("sent.mp3"), "./sent.mp3");
     }
     return r.filter((e, t, n) => e && n.indexOf(e) === t);
   }, [L, M]);
@@ -53515,7 +53515,7 @@ const Zp = ({
                 title: e.name || "糯嘰機",
                 body: "📞 来电…点击接听",
                 tag: "incoming-call",
-                icon: t || "/pwa-512x512.png",
+                icon: t || "./pwa-512x512.png",
                 largeIcon: t,
                 senderName: e.name || "",
                 conversationId: `call_${e.id}`,
@@ -53597,7 +53597,7 @@ const Zp = ({
             title: e.name || "糯嘰機",
             body: "📞 視頻通話請求",
             tag: "incoming-call",
-            icon: i || "/pwa-512x512.png",
+            icon: i || "./pwa-512x512.png",
             largeIcon: i,
             data: {
               charId: e.id
@@ -72556,7 +72556,7 @@ const Ny = {
   subTag: "APK · iOS · COMMUNITY",
   title: "APK / iOS App 正式推出 + 官方论坛上线",
   subtitle: "NUOJIJI APP LAUNCH · 2026.06",
-  mainImage: "/nuojiji_comeback_cover.webp",
+  mainImage: "./nuojiji_comeback_cover.webp",
   items: [{
     title: "📱 APK / iOS App 正式推出",
     desc: yt.jsxs(yt.Fragment, {

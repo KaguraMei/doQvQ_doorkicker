@@ -1,0 +1,14 @@
+{
+  "appId": "app.nuojiji",
+  "appName": "糯叽机",
+  "webDir": "www",
+  "server": {
+    "hostname": "nuojiji.app",
+    "androidScheme": "https",
+    "iosScheme": "https",
+    "allowNavigation": ["*"]
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
