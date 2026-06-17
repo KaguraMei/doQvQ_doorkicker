@@ -1,1 +1,115 @@
-const e={rerollVariantsEnabled:!1,crossContext:!1,autoTranslate:!1,autoTranslateExpand:!1,isRemoteLocation:!1,voiceEnabled:!1,autoVoice:!1,theaterMode:!1,theaterAutoReplyAi:!1,allowActionsInIM:!1,consolePanelEnabled:!1,minSentencesEnabled:!1,maxSentencesEnabled:!1,singleBubbleMode:!1,isBlocked:!1,visionEnabled:!1,stickerVisionEnabled:!1,stickerVisionCache:!0,showUserAvatarToChar:!1,allowCharSetAvatar:!1,allowCharRelChange:!1,autoOfflineInvite:!1,disableCharHangup:!1,callNarrationEnabled:!1,bannerMuted:!1,summaryUseJailbreak:!1,stickerSendEnabled:!0,realTimeAware:!0,sceneTachieEnabled:!0,npcEnabled:!0,privateGroupTrigger:!0,theaterNarration:!0,thinkingPanelEnabled:!0,imageGenEnabled:!0,userAvatar:null,partnerAvatar:null,blockedAt:null,defaultSceneId:null,defaultTachieCategory:null,relationship:"",charToUserRelationship:"",minimaxTimbreId:"",elevenVoiceId:"",sovitsRefAudioPath:"",sovitsRefText:"",sovitsGptPath:"",sovitsSovitsPath:"",sovitsGsviVoice:"",sovitsGsviModel:"",sovitsGsviLang:"",sovitsGsviEmotion:"",sovitsApiVersion:"v2",pronunciationDict:"",theaterAutoReply:"",theaterAutoReplyBusy:"",theaterAutoReplySleep:"",theaterAutoReplyDefault:"",charImagePrompt:"",customSummaryInstructions:"",xinshengTemplate:"",xinshengCustomPrompt:"",xinshengExtractRegex:"",crossContextDepth:0,autoSummaryFrequency:0,memoryDepth:20,minSentences:2,maxSentences:5,voiceSpeed:1,charLanguage:"Japanese",userLocation:"Taipei",charLocation:"Tokyo",userRealLocation:"Taipei",charRealLocation:"Tokyo",voiceLanguage:"auto",imageQuality:"auto",customSummaryWordCount:"100-150",voiceProvider:"minimax",npcMsgMode:"merged",activeTachieCategory:"預設",selectedSyncChars:[],callTachies:[],callTachieCategories:["預設"],callBackgrounds:[{id:"default_black",name:"預設 (Default)",url:"#000000"}],ltPlaylistIds:[],summaryJailbreakIds:[],userDndWindows:[]},a={};for(const[n,o]of Object.entries(e))a[n]="object"==typeof o&&null!==o?JSON.stringify(o):null;function t(t){const n={};for(const o in t){const i=t[o];if(void 0!==i){if(o in e){if(i===e[o])continue;if(null!==a[o]&&"object"==typeof i&&null!==i&&JSON.stringify(i)===a[o])continue}n[o]=i}}return n}export{e as CHAT_SETTINGS_DEFAULTS,t as compactChatSettings};
+const e = {
+  rerollVariantsEnabled: false,
+  crossContext: false,
+  autoTranslate: false,
+  autoTranslateExpand: false,
+  isRemoteLocation: false,
+  voiceEnabled: false,
+  autoVoice: false,
+  theaterMode: false,
+  theaterAutoReplyAi: false,
+  allowActionsInIM: false,
+  consolePanelEnabled: false,
+  minSentencesEnabled: false,
+  maxSentencesEnabled: false,
+  singleBubbleMode: false,
+  isBlocked: false,
+  visionEnabled: false,
+  stickerVisionEnabled: false,
+  stickerVisionCache: true,
+  showUserAvatarToChar: false,
+  allowCharSetAvatar: false,
+  allowCharRelChange: false,
+  autoOfflineInvite: false,
+  disableCharHangup: false,
+  callNarrationEnabled: false,
+  bannerMuted: false,
+  summaryUseJailbreak: false,
+  stickerSendEnabled: true,
+  realTimeAware: true,
+  sceneTachieEnabled: true,
+  npcEnabled: true,
+  privateGroupTrigger: true,
+  theaterNarration: true,
+  thinkingPanelEnabled: true,
+  imageGenEnabled: true,
+  userAvatar: null,
+  partnerAvatar: null,
+  blockedAt: null,
+  defaultSceneId: null,
+  defaultTachieCategory: null,
+  relationship: "",
+  charToUserRelationship: "",
+  minimaxTimbreId: "",
+  elevenVoiceId: "",
+  sovitsRefAudioPath: "",
+  sovitsRefText: "",
+  sovitsGptPath: "",
+  sovitsSovitsPath: "",
+  sovitsGsviVoice: "",
+  sovitsGsviModel: "",
+  sovitsGsviLang: "",
+  sovitsGsviEmotion: "",
+  sovitsApiVersion: "v2",
+  pronunciationDict: "",
+  theaterAutoReply: "",
+  theaterAutoReplyBusy: "",
+  theaterAutoReplySleep: "",
+  theaterAutoReplyDefault: "",
+  charImagePrompt: "",
+  customSummaryInstructions: "",
+  xinshengTemplate: "",
+  xinshengCustomPrompt: "",
+  xinshengExtractRegex: "",
+  crossContextDepth: 0,
+  autoSummaryFrequency: 0,
+  memoryDepth: 20,
+  minSentences: 2,
+  maxSentences: 5,
+  voiceSpeed: 1,
+  charLanguage: "Japanese",
+  userLocation: "Taipei",
+  charLocation: "Tokyo",
+  userRealLocation: "Taipei",
+  charRealLocation: "Tokyo",
+  voiceLanguage: "auto",
+  imageQuality: "auto",
+  customSummaryWordCount: "100-150",
+  voiceProvider: "minimax",
+  npcMsgMode: "merged",
+  activeTachieCategory: "預設",
+  selectedSyncChars: [],
+  callTachies: [],
+  callTachieCategories: ["預設"],
+  callBackgrounds: [{
+    id: "default_black",
+    name: "預設 (Default)",
+    url: "#000000"
+  }],
+  ltPlaylistIds: [],
+  summaryJailbreakIds: [],
+  userDndWindows: []
+};
+const a = {};
+for (const [n, o] of Object.entries(e)) {
+  a[n] = typeof o == "object" && o !== null ? JSON.stringify(o) : null;
+}
+function t(t) {
+  const n = {};
+  for (const o in t) {
+    const i = t[o];
+    if (i !== undefined) {
+      if (o in e) {
+        if (i === e[o]) {
+          continue;
+        }
+        if (a[o] !== null && typeof i == "object" && i !== null && JSON.stringify(i) === a[o]) {
+          continue;
+        }
+      }
+      n[o] = i;
+    }
+  }
+  return n;
+}
+export { e as CHAT_SETTINGS_DEFAULTS, t as compactChatSettings };
