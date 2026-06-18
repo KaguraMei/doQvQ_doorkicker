@@ -4,7 +4,7 @@ import { r as h, j as m, b as p } from "./vendor-react-B2VXkTUV.js";
 import { compressImageForStorage as u } from "./imageCompressor-FPWVE1FW.js";
 import { M as x } from "./MessageItem-ByQysHRN.js";
 import { a3 as g } from "./main-BO9xa-SQ.js";
-import { bv as f, I as v, c1 as j, ak as b, p as N, M as y, at as k, c2 as w, aw as S, x as C, Q as _, ae as I, E as z, b2 as A, as as $, ap as P, S as T, ai as E, d as M, aj as R, H as L, R as W, b as D, c as F, e as B, f as O, au as G, ah as q, q as U, b9 as V, c3 as H, al as Y, bF as J, X, A as Z, a9 as K, bH as Q, U as ee, aH as se, J as ae, aB as ie, bc as te, V as ne, c4 as le, an as re, Y as ce } from "./vendor-lucide-DBv09HTV.js";
+import { bv as f, I as v, c1 as j, ak as b, p as N, M as y, at as k, c2 as w, aw as S, x as C, Q as _, ae as I, E as z, b2 as A, as as $, ap as P, S as T, ai as E, d as MountainIcon, aj as R, H as L, R as W, b as D, c as F, e as B, f as O, au as G, ah as q, q as U, b9 as V, c3 as H, al as Y, bF as J, X, A as Z, a9 as K, bH as Q, U as ee, aH as se, J as ae, aB as ie, bc as te, V as ne, c4 as le, an as re, Y as ce } from "./vendor-lucide-DBv09HTV.js";
 import "./vendor-dexie-KLdnSHz2.js";
 import "./vendor-jszip-DU-5YDGO.js";
 import "./TestResultCard-DePnKHCl.js";
@@ -2578,7 +2578,7 @@ const Se = ({
                       className: "hp-fav-body",
                       children: [m.jsxs("div", {
                         className: "hp-fav-voice-fakebar",
-                        children: [m.jsx(M, {
+                        children: [m.jsx(MountainIcon, {
                           size: 11,
                           fill: "#6b46ff",
                           color: "#6b46ff"
@@ -4686,7 +4686,7 @@ const Se = ({
                     Te(true);
                   }
                 },
-                children: [m.jsx(M, {
+                children: [m.jsx(MountainIcon, {
                   size: 14,
                   fill: "#110e15",
                   color: "#110e15",
@@ -4728,7 +4728,7 @@ const Se = ({
                       })]
                     }), m.jsx("div", {
                       className: "song-row-play",
-                      children: m.jsx(M, {
+                      children: m.jsx(MountainIcon, {
                         size: 12,
                         className: "song-play-icon"
                       })
@@ -4861,7 +4861,7 @@ const Se = ({
               size: 20,
               fill: "#110e15",
               color: "#110e15"
-            }) : m.jsx(M, {
+            }) : m.jsx(MountainIcon, {
               size: 20,
               fill: "#110e15",
               color: "#110e15",
