@@ -1,0 +1,89 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - img
+      - img
+      - img
+  - generic [ref=e3]:
+    - banner "NuoOS status bar" [ref=e4]:
+      - generic [ref=e5]: NuoOS
+      - time [ref=e6]: 10:18
+      - generic [ref=e7]:
+        - generic [ref=e8]: ◦
+        - generic [ref=e9]: ▰
+    - button "floating quick console" [ref=e10]: ✦
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - heading "主页面" [level=1] [ref=e13]
+        - list "主页面应用" [ref=e14]:
+          - listitem [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]: 💬
+            - generic [ref=e17]: 消息
+          - listitem [ref=e18] [cursor=pointer]:
+            - generic [ref=e19]: 📖
+            - generic [ref=e20]: 世界书
+          - listitem [ref=e21] [cursor=pointer]:
+            - generic [ref=e22]: 🎨
+            - generic [ref=e23]: 外观
+          - listitem [ref=e24] [cursor=pointer]:
+            - generic [ref=e25]: 🍅
+            - generic [ref=e26]: 番茄钟
+          - listitem [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]: 💞
+            - generic [ref=e29]: 情侣空间
+          - listitem [ref=e30] [cursor=pointer]:
+            - generic [ref=e31]: 🚶
+            - generic [ref=e32]: 外出
+          - listitem [ref=e33] [cursor=pointer]:
+            - generic [ref=e34]: 🌀
+            - generic [ref=e35]: 异世界
+          - listitem [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]: 🍜
+            - generic [ref=e38]: 吃了吗
+          - listitem [ref=e39] [cursor=pointer]:
+            - generic [ref=e40]: 🎮
+            - generic [ref=e41]: 游戏大厅
+          - listitem [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]: 📟
+            - generic [ref=e44]: 监视器
+          - listitem [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: 💓
+            - generic [ref=e47]: 心动观察
+          - listitem [ref=e48] [cursor=pointer]:
+            - generic [ref=e49]: 🗂️
+            - generic [ref=e50]: 名册
+          - listitem [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: 🕰️
+            - generic [ref=e53]: 此时此刻
+          - listitem [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]: 📻
+            - generic [ref=e56]: 一起听电台
+          - listitem [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: 🏛️
+            - generic [ref=e59]: 记忆宫殿
+          - listitem [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]: ⚗️
+            - generic [ref=e62]: 炼金术
+          - listitem [ref=e63] [cursor=pointer]:
+            - generic [ref=e64]: 🔌
+            - generic [ref=e65]: MCP 服务
+          - listitem [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: 💗
+            - generic [ref=e68]: 健康
+          - listitem [ref=e69] [cursor=pointer]:
+            - generic [ref=e70]: 🏠
+            - generic [ref=e71]: 糯叽馆
+      - navigation "Dock" [ref=e72]:
+        - button "设置" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: ⚙️
+          - generic [ref=e75]: 设置
+        - button "白狗拆解机" [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: 🐕
+          - generic [ref=e78]: 白狗拆解机
+        - button "日历" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]: 📅
+          - generic [ref=e81]: 日历
+        - button "论坛" [ref=e82] [cursor=pointer]:
+          - generic [ref=e83]: 🗣️
+          - generic [ref=e84]: 论坛
+    - generic: Reconstructed shell · 23 apps indexed from bundle

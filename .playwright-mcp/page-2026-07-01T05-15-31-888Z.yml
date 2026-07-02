@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - img
+      - img
+      - img
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic:
+        - generic:
+          - generic: NuoOS
+        - generic:
+          - generic: 13:15
+        - generic:
+          - img
+          - generic:
+            - generic: ⚡
+    - generic [ref=e12]:
+      - generic:
+        - generic: ✦
+        - generic: ✧
+        - generic: ✦
+        - generic: ·
+        - generic: ✧
+      - generic [ref=e13]:
+        - generic [ref=e14]: ♥
+        - generic [ref=e15]: 18+
+      - heading "成人内容提示" [level=2] [ref=e16]
+      - paragraph [ref=e17]: 糯叽机是一款成人向的虚构角色扮演 App，所有对话与内容均由你自行建立的 AI 角色即时生成，可能含成人向虚构情节。请确认你已年满 18 岁。
+      - generic [ref=e18]:
+        - generic [ref=e19]: 🐾
+        - generic [ref=e20]: ♥
+        - generic [ref=e21]: ⭐
+      - button "我已年满 18 岁，进入" [ref=e22] [cursor=pointer]
+      - button "未满 18 岁，离开" [ref=e23] [cursor=pointer]
+      - paragraph [ref=e24]: 本 App 内容由 AI 生成并存储在你的设备本地，仅供个人娱乐。
+  - generic [ref=e34]:
+    - text: NUOJIJI
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: VOL.01
+        - generic [ref=e38]: "2026"
+      - heading "Launch" [level=1] [ref=e39]
+      - generic [ref=e40]: APK · iOS · COMMUNITY
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e47]: NO.01
+        - generic [ref=e48]: NEW
+        - img "hero" [ref=e50]
+      - heading "APK / iOS App 正式推出 + 官方论坛上线" [level=2] [ref=e52]
+      - generic [ref=e53]: NUOJIJI APP LAUNCH · 2026.06
+    - list [ref=e56]:
+      - listitem [ref=e57]:
+        - generic [ref=e58]: "01"
+        - generic [ref=e59]:
+          - strong [ref=e60]: 📱 APK / iOS App 正式推出
+          - generic [ref=e61]:
+            - text: 糯叽机不再只是网页——双端原生 App 来了。
+            - text: 🤖 Android APK——直接安装，桌宠可外置悬浮在桌面，还能窥屏看到真正的手机内容
+            - text: 🍎 iOS TestFlight——桌宠可常驻灵动岛与手机小组件
+            - text: 🔔 双端均支持后端推送通知、原生分享、原生文件存储
+      - listitem [ref=e62]:
+        - generic [ref=e63]: "02"
+        - generic [ref=e64]:
+          - strong [ref=e65]: 🌐 官方论坛网站上线
+          - generic [ref=e66]:
+            - text: 糯叽机有自己的社区了。
+            - text: 🏛️ community.nuojiji.app——交流玩法、分享角色卡 / 主题 / 正则
+            - text: 📢 公告、教程、反馈一站汇聚，遇到问题这里找答案
+      - listitem [ref=e67]:
+        - generic [ref=e68]: "03"
+        - generic [ref=e69]:
+          - strong [ref=e70]: 👁️ App 感知 · char 知道你在玩什么
+          - generic [ref=e71]:
+            - text: 双端原生 App 独有——char 能感知你的手机使用。
+            - text: 📲 感知你打开了哪个 App，以及使用时长
+            - text: 💬 char 会就此和你互动——你刷手机久了它会有反应
+            - text: 🔒 数据只在本地用于对话感知，不外传
+      - listitem [ref=e72]:
+        - generic [ref=e73]: "04"
+        - generic [ref=e74]:
+          - strong [ref=e75]: 🕵️ 心动观察（原痴汉模拟器）改名完成
+          - generic [ref=e76]:
+            - text: 全新名字，更完整的玩法。
+            - text: 📱 查看对方手机——翻看 ta 的聊天与内容
+            - text: 🔍 自动检查——后台自发查探，演出更顺滑、真人化
+            - text: 🐾 跟踪玩法——尾随对方，行程与日程联动
+      - listitem [ref=e77]:
+        - generic [ref=e78]: "05"
+        - generic [ref=e79]:
+          - strong [ref=e80]: 🩺 健康 App · char 懂你的身体
+          - generic [ref=e81]:
+            - text: 记录你的健康，char 能感知，也能帮你记。
+            - text: 📊 记录月经 / 睡眠 / 压力 / 心情 / 步数 / 运动 等
+            - text: 🤝 char 知道你的健康状态，关心更到位
+            - text: ✍️ char 可代你记录——一句话帮你写进健康 App（可全局开关）
+            - text: 💤 睡眠支持分段记录，AI 感知入睡 / 起床时间
+      - listitem [ref=e82]:
+        - generic [ref=e83]: "06"
+        - generic [ref=e84]:
+          - strong [ref=e85]: 💾 导入导出大优化
+          - generic [ref=e86]:
+            - text: 备份更稳、更快、更省心。
+            - text: ☁️ GitHub 导入导出优化——更可靠的云端备份方式
+            - text: 📦 本地导入导出优化——大库导出不再闪退，分量导出补齐
+            - text: 🩹 多重防丢信标守卫——杜绝更新 / 重启后变白板
+      - listitem [ref=e87]:
+        - generic [ref=e88]: "07"
+        - generic [ref=e89]:
+          - strong [ref=e90]: 🔒 生图锁脸
+          - generic [ref=e91]:
+            - text: 让 char 每次出图都是同一张脸。
+            - text: 🎭 固定 seed（NovelAI）+ 定妆参考图（三家通用）
+            - text: ⚠️ 只能用 char 自己生成的图来锁脸，确保是同一个人
+      - listitem [ref=e92]:
+        - generic [ref=e93]: "08"
+        - generic [ref=e94]:
+          - strong [ref=e95]: 📚 世界书升级 · 分类 + 单聊开关
+          - generic [ref=e96]:
+            - text: 世界书更好管、更好用。
+            - text: 🗂️ 世界书支持分类——给每本书归类，书架按分类筛选
+            - text: 🎚️ 聊天设定可单独开关世界书——每个会话自己决定启用哪些书 / 哪些条目
+            - text: 🪶 名册挂书仍作出厂默认，互不冲突
+      - listitem [ref=e97]:
+        - generic [ref=e98]: "09"
+        - generic [ref=e99]:
+          - strong [ref=e100]: 👉 拍一拍 + 更多互动
+          - generic [ref=e101]:
+            - text: 👉 拍一拍——轻点头像戳一戳 char，自定义拍一拍文案
+            - text: 🧵 自定义思维链——线上也能显示思维链气泡
+            - text: 🧠 心声字段级读取——指定 char 只听见你勾选的心声
+      - listitem [ref=e102]:
+        - generic [ref=e103]: "010"
+        - generic [ref=e104]:
+          - strong [ref=e105]: ⚠️ 后端服务 · 请谨慎使用
+          - generic [ref=e106]:
+            - text: 后端中继推送目前仍有已知风险，请按需开启。
+            - text: 📵 部分用户会只收到消息提示但点进去没有内容——成因为冷启动、跨域与网络被墙
+            - text: 🛑 若出现异常，务必到 Cloudflare 删除后端部署，避免持续扣费
+            - text: 💡 不确定就先别开，前台聊天不受影响
+      - listitem [ref=e107]:
+        - generic [ref=e108]: "011"
+        - generic [ref=e109]:
+          - strong [ref=e110]: 🛠️ 其他修复与优化
+          - generic [ref=e111]:
+            - text: ⌨️ 键盘视口大量优化——多机型输入栏被挡 / 进页闪白逐一修复
+            - text: 🍜 新增今天吃了吗 小 App + 界面美化
+            - text: 🎙️ 语音生成多供应商——接入 ElevenLabs / GPT-SoVITS，per-char 独立音色
+            - text: 📨 修复 iOS 推送消息丢失、引用消息显示、未读计数等多处问题
+            - text: 🌏 角色列表 / 收藏 / 多处美化 + 三语翻译补齐
+    - generic [ref=e113]:
+      - generic [ref=e114]: "* 请确保设定中版本号是 6.8.7-2026.06.13"
+      - button "我知道了" [ref=e115] [cursor=pointer]
+      - generic [ref=e116]: · HAPPY ·

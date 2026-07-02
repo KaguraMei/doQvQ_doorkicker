@@ -1,0 +1,755 @@
+{
+  "source": "assets/main-BO9xa-SQ.js",
+  "total": 106,
+  "counts": {
+    "shared": 18,
+    "vendor-runtime": 7,
+    "style": 4,
+    "feature-ui": 63,
+    "service": 14
+  },
+  "items": [
+    {
+      "index": 0,
+      "path": "./assets/native-pet-CTNtZgMA.js",
+      "name": "native-pet-CTNtZgMA.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 1,
+      "path": "./assets/vendor-react-B2VXkTUV.js",
+      "name": "vendor-react-B2VXkTUV.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 2,
+      "path": "./assets/vendor-dexie-KLdnSHz2.js",
+      "name": "vendor-dexie-KLdnSHz2.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 3,
+      "path": "./assets/vendor-jszip-DU-5YDGO.js",
+      "name": "vendor-jszip-DU-5YDGO.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 4,
+      "path": "./assets/vendor-lucide-DBv09HTV.js",
+      "name": "vendor-lucide-DBv09HTV.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 5,
+      "path": "./assets/native-pet-D9YoqRtr.css",
+      "name": "native-pet-D9YoqRtr.css",
+      "ext": "css",
+      "group": "style"
+    },
+    {
+      "index": 6,
+      "path": "./assets/petCare-3692o74Q.js",
+      "name": "petCare-3692o74Q.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 7,
+      "path": "./assets/ChatDetailScreen-qTVdjKXv.js",
+      "name": "ChatDetailScreen-qTVdjKXv.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 8,
+      "path": "./assets/useQuickReply-CdHVvLEb.js",
+      "name": "useQuickReply-CdHVvLEb.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 9,
+      "path": "./assets/useKeyboardViewportAdjust-DuHxtIzN.js",
+      "name": "useKeyboardViewportAdjust-DuHxtIzN.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 10,
+      "path": "./assets/aiSummaryService-Bx5aTYVV.js",
+      "name": "aiSummaryService-Bx5aTYVV.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 11,
+      "path": "./assets/useQuickReply-BJeAvQrB.css",
+      "name": "useQuickReply-BJeAvQrB.css",
+      "ext": "css",
+      "group": "style"
+    },
+    {
+      "index": 12,
+      "path": "./assets/MessageItem-ByQysHRN.js",
+      "name": "MessageItem-ByQysHRN.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 13,
+      "path": "./assets/TestResultCard-DePnKHCl.js",
+      "name": "TestResultCard-DePnKHCl.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 14,
+      "path": "./assets/GiftHtmlRenderer-7nTR9M_6.js",
+      "name": "GiftHtmlRenderer-7nTR9M_6.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 15,
+      "path": "./assets/aiRadioService-B2ynJ5ER.js",
+      "name": "aiRadioService-B2ynJ5ER.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 16,
+      "path": "./assets/userSuggestionPrompts-DFdKgzKs.js",
+      "name": "userSuggestionPrompts-DFdKgzKs.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 17,
+      "path": "./assets/XinshengLayoutRenderer-CZixxQRY.js",
+      "name": "XinshengLayoutRenderer-CZixxQRY.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 18,
+      "path": "./assets/imageGenWorldBook-BtUaGdHO.js",
+      "name": "imageGenWorldBook-BtUaGdHO.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 19,
+      "path": "./assets/usePlaylist-1Fnrspon.js",
+      "name": "usePlaylist-1Fnrspon.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 20,
+      "path": "./assets/chatSettingsDefaults-D8yWZ95H.js",
+      "name": "chatSettingsDefaults-D8yWZ95H.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 21,
+      "path": "./assets/ConfirmDialog-Dsc35sh0.js",
+      "name": "ConfirmDialog-Dsc35sh0.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 22,
+      "path": "./assets/ManualSummaryModal-uKlbX1iN.js",
+      "name": "ManualSummaryModal-uKlbX1iN.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 23,
+      "path": "./assets/modulepreload-polyfill-YP0FEG5d.js",
+      "name": "modulepreload-polyfill-YP0FEG5d.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 24,
+      "path": "./assets/vendor-supabase-Bcpm_8qV.js",
+      "name": "vendor-supabase-Bcpm_8qV.js",
+      "ext": "js",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 25,
+      "path": "./assets/NotificationBar-y-kP9VHv.css",
+      "name": "NotificationBar-y-kP9VHv.css",
+      "ext": "css",
+      "group": "style"
+    },
+    {
+      "index": 26,
+      "path": "./assets/vendor-fonts-BglBY6By.css",
+      "name": "vendor-fonts-BglBY6By.css",
+      "ext": "css",
+      "group": "vendor-runtime"
+    },
+    {
+      "index": 27,
+      "path": "./assets/GroupChatScreen-Cc5WIBUo.js",
+      "name": "GroupChatScreen-Cc5WIBUo.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 28,
+      "path": "./assets/imageCompressor-FPWVE1FW.js",
+      "name": "imageCompressor-FPWVE1FW.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 29,
+      "path": "./assets/UserChatScreen-DLj6kzSp.js",
+      "name": "UserChatScreen-DLj6kzSp.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 30,
+      "path": "./assets/MomentsTab-CEebqNGO.js",
+      "name": "MomentsTab-CEebqNGO.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 31,
+      "path": "./assets/RerollEditModal-BlpSgCaT.js",
+      "name": "RerollEditModal-BlpSgCaT.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 32,
+      "path": "./assets/MessagingThemeSettings-DvZyB14K.js",
+      "name": "MessagingThemeSettings-DvZyB14K.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 33,
+      "path": "./assets/messagingThemeService-CTLNGXBa.js",
+      "name": "messagingThemeService-CTLNGXBa.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 34,
+      "path": "./assets/workerSyncService-Bi45Y3S-.js",
+      "name": "workerSyncService-Bi45Y3S-.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 35,
+      "path": "./assets/incomingCall-CxvAUTuT.js",
+      "name": "incomingCall-CxvAUTuT.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 36,
+      "path": "./assets/browser-4ffUmBjv.js",
+      "name": "browser-4ffUmBjv.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 37,
+      "path": "./assets/petPeekStore-BGJg8bWq.js",
+      "name": "petPeekStore-BGJg8bWq.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 38,
+      "path": "./assets/ShareTargetReceiver-BgsQ17cL.js",
+      "name": "ShareTargetReceiver-BgsQ17cL.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 39,
+      "path": "./assets/IosAppSenseReceiver-Dg3khiJ5.js",
+      "name": "IosAppSenseReceiver-Dg3khiJ5.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 40,
+      "path": "./assets/MemoryMonitor-BHqhfC1J.js",
+      "name": "MemoryMonitor-BHqhfC1J.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 41,
+      "path": "./assets/WorldBookScreen-D1G9FIaM.js",
+      "name": "WorldBookScreen-D1G9FIaM.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 42,
+      "path": "./assets/WorldBookScreen-Xo8ccIx2.css",
+      "name": "WorldBookScreen-Xo8ccIx2.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 43,
+      "path": "./assets/WallpaperScreen-C9FS8ZD1.js",
+      "name": "WallpaperScreen-C9FS8ZD1.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 44,
+      "path": "./assets/AudioUploadModal-DF7VJ3eE.js",
+      "name": "AudioUploadModal-DF7VJ3eE.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 45,
+      "path": "./assets/FrostedGlassBackground-DQPbupYU.js",
+      "name": "FrostedGlassBackground-DQPbupYU.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 46,
+      "path": "./assets/FrostedGlassBackground-BlYsPIx1.css",
+      "name": "FrostedGlassBackground-BlYsPIx1.css",
+      "ext": "css",
+      "group": "style"
+    },
+    {
+      "index": 47,
+      "path": "./assets/forumThemeService-CnIUGRXT.js",
+      "name": "forumThemeService-CnIUGRXT.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 48,
+      "path": "./assets/ApiSettingsScreen-DonBbfpN.js",
+      "name": "ApiSettingsScreen-DonBbfpN.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 49,
+      "path": "./assets/indexedDBDiagnostics-CN6kNlvG.js",
+      "name": "indexedDBDiagnostics-CN6kNlvG.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 50,
+      "path": "./assets/FontSettingsScreen-CYXF7_Pn.js",
+      "name": "FontSettingsScreen-CYXF7_Pn.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 51,
+      "path": "./assets/NotificationThemeScreen-dm9snkt8.js",
+      "name": "NotificationThemeScreen-dm9snkt8.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 52,
+      "path": "./assets/NotificationThemeScreen-DPS4VACa.css",
+      "name": "NotificationThemeScreen-DPS4VACa.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 53,
+      "path": "./assets/CustomIconScreen-C31DrT6S.js",
+      "name": "CustomIconScreen-C31DrT6S.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 54,
+      "path": "./assets/PomodoroScreen-BTEp3J12.js",
+      "name": "PomodoroScreen-BTEp3J12.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 55,
+      "path": "./assets/pushSubscriptionManager-BzPwLmDo.js",
+      "name": "pushSubscriptionManager-BzPwLmDo.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 56,
+      "path": "./assets/taskIntegrationService-Cie9qZr7.js",
+      "name": "taskIntegrationService-Cie9qZr7.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 57,
+      "path": "./assets/nativeAlarmScheduler-IH1BZ8wl.js",
+      "name": "nativeAlarmScheduler-IH1BZ8wl.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 58,
+      "path": "./assets/CouplesScreen-CSLmORp5.js",
+      "name": "CouplesScreen-CSLmORp5.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 59,
+      "path": "./assets/useLastSelectedChar-BA2jreMl.js",
+      "name": "useLastSelectedChar-BA2jreMl.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 60,
+      "path": "./assets/CouplesScreen-Cu6e_jeq.css",
+      "name": "CouplesScreen-Cu6e_jeq.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 61,
+      "path": "./assets/GoingOutScreen-LoZEj3iQ.js",
+      "name": "GoingOutScreen-LoZEj3iQ.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 62,
+      "path": "./assets/useMultiSceneTmVoice-ChHRxqVg.js",
+      "name": "useMultiSceneTmVoice-ChHRxqVg.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 63,
+      "path": "./assets/GoingOutScreen-D3FX4bE3.css",
+      "name": "GoingOutScreen-D3FX4bE3.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 64,
+      "path": "./assets/IsekaiScreen-De0VH1_p.js",
+      "name": "IsekaiScreen-De0VH1_p.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 65,
+      "path": "./assets/DidYouEatScreen-DO1_hMbA.js",
+      "name": "DidYouEatScreen-DO1_hMbA.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 66,
+      "path": "./assets/DidYouEatScreen-zIwFxFZj.css",
+      "name": "DidYouEatScreen-zIwFxFZj.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 67,
+      "path": "./assets/GameLobbyScreen-CRiLQuDu.js",
+      "name": "GameLobbyScreen-CRiLQuDu.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 68,
+      "path": "./assets/SmartDropdown-Blgtm2Dm.js",
+      "name": "SmartDropdown-Blgtm2Dm.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 69,
+      "path": "./assets/WerewolfScreen-ZOGJwTCQ.js",
+      "name": "WerewolfScreen-ZOGJwTCQ.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 70,
+      "path": "./assets/useKeyboardResize-30dPsEQL.js",
+      "name": "useKeyboardResize-30dPsEQL.js",
+      "ext": "js",
+      "group": "shared"
+    },
+    {
+      "index": 71,
+      "path": "./assets/TruthOrDareScreen-vk98Iz4b.js",
+      "name": "TruthOrDareScreen-vk98Iz4b.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 72,
+      "path": "./assets/GomokuScreen-DmpCVTTM.js",
+      "name": "GomokuScreen-DmpCVTTM.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 73,
+      "path": "./assets/MahjongScreen-BYHwpPGZ.js",
+      "name": "MahjongScreen-BYHwpPGZ.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 74,
+      "path": "./assets/UnoScreen-CVSen7jf.js",
+      "name": "UnoScreen-CVSen7jf.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 75,
+      "path": "./assets/HPSortingScreen-CBC2CHoi.js",
+      "name": "HPSortingScreen-CBC2CHoi.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 76,
+      "path": "./assets/MbtiTestScreen-trFUp9yi.js",
+      "name": "MbtiTestScreen-trFUp9yi.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 77,
+      "path": "./assets/LoveBrainTestScreen-z7z9r0ic.js",
+      "name": "LoveBrainTestScreen-z7z9r0ic.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 78,
+      "path": "./assets/CustomTestScreen-B8EUjJlu.js",
+      "name": "CustomTestScreen-B8EUjJlu.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 79,
+      "path": "./assets/CustomGameScreen-Djm4AF8s.js",
+      "name": "CustomGameScreen-Djm4AF8s.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 80,
+      "path": "./assets/CustomGamePlayerScreen-C8htJB2X.js",
+      "name": "CustomGamePlayerScreen-C8htJB2X.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 81,
+      "path": "./assets/MonitorScreen-Btym3LK5.js",
+      "name": "MonitorScreen-Btym3LK5.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 82,
+      "path": "./assets/MonitorScreen-Cqg6Kcbs.css",
+      "name": "MonitorScreen-Cqg6Kcbs.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 83,
+      "path": "./assets/ChikanSimScreen-CKQ_xeVT.js",
+      "name": "ChikanSimScreen-CKQ_xeVT.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 84,
+      "path": "./assets/ChikanSimScreen-CIYaAKOO.css",
+      "name": "ChikanSimScreen-CIYaAKOO.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 85,
+      "path": "./assets/CharacterRosterApp-x5i2x52S.js",
+      "name": "CharacterRosterApp-x5i2x52S.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 86,
+      "path": "./assets/CharacterRosterApp-DLSDFUOK.css",
+      "name": "CharacterRosterApp-DLSDFUOK.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 87,
+      "path": "./assets/CalendarApp-DqmGaJOT.js",
+      "name": "CalendarApp-DqmGaJOT.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 88,
+      "path": "./assets/CalendarApp-DLlQ1vDg.css",
+      "name": "CalendarApp-DLlQ1vDg.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 89,
+      "path": "./assets/HealthScreen-ucNXwEYc.js",
+      "name": "HealthScreen-ucNXwEYc.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 90,
+      "path": "./assets/HealthScreen-CK5N46DT.css",
+      "name": "HealthScreen-CK5N46DT.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 91,
+      "path": "./assets/ThisMomentScreen-D_HrnIOI.js",
+      "name": "ThisMomentScreen-D_HrnIOI.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 92,
+      "path": "./assets/tmThemeService-Bwn0j6qK.js",
+      "name": "tmThemeService-Bwn0j6qK.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 93,
+      "path": "./assets/tmThemeService-GFl2vSqI.css",
+      "name": "tmThemeService-GFl2vSqI.css",
+      "ext": "css",
+      "group": "service"
+    },
+    {
+      "index": 94,
+      "path": "./assets/MemoryPalaceScreen-DsRL9Eiu.js",
+      "name": "MemoryPalaceScreen-DsRL9Eiu.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 95,
+      "path": "./assets/MemoryPalaceScreen-CzoHKxv2.css",
+      "name": "MemoryPalaceScreen-CzoHKxv2.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 96,
+      "path": "./assets/ForumApp-Dy0v4PZa.js",
+      "name": "ForumApp-Dy0v4PZa.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 97,
+      "path": "./assets/ForumApp-4X_HyvPC.css",
+      "name": "ForumApp-4X_HyvPC.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 98,
+      "path": "./assets/WhiteDogDecomposerScreen-BT0ajmmg.js",
+      "name": "WhiteDogDecomposerScreen-BT0ajmmg.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 99,
+      "path": "./assets/WhiteDogDecomposerScreen-BtKZdtDZ.css",
+      "name": "WhiteDogDecomposerScreen-BtKZdtDZ.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 100,
+      "path": "./assets/RadioScreen-Bt1O76Fa.js",
+      "name": "RadioScreen-Bt1O76Fa.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 101,
+      "path": "./assets/TextAlchemistScreen-DtfEkO2i.js",
+      "name": "TextAlchemistScreen-DtfEkO2i.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 102,
+      "path": "./assets/TextAlchemistScreen-towi0px6.css",
+      "name": "TextAlchemistScreen-towi0px6.css",
+      "ext": "css",
+      "group": "feature-ui"
+    },
+    {
+      "index": 103,
+      "path": "./assets/McpScreen-BEZE17_e.js",
+      "name": "McpScreen-BEZE17_e.js",
+      "ext": "js",
+      "group": "feature-ui"
+    },
+    {
+      "index": 104,
+      "path": "./assets/githubBackup-DdICfwzQ.js",
+      "name": "githubBackup-DdICfwzQ.js",
+      "ext": "js",
+      "group": "service"
+    },
+    {
+      "index": 105,
+      "path": "./assets/layoutDiagOverlay-CxzWpjbF.js",
+      "name": "layoutDiagOverlay-CxzWpjbF.js",
+      "ext": "js",
+      "group": "shared"
+    }
+  ]
+}

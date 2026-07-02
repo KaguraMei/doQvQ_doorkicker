@@ -1,0 +1,28 @@
+- generic [ref=e3]:
+  - banner "NuoOS status bar" [ref=e4]:
+    - generic [ref=e5]: NuoOS
+    - time [ref=e6]: 17:08
+    - generic [ref=e7]:
+      - generic [ref=e8]: ◦
+      - generic [ref=e9]: ▰
+  - button "floating quick console" [ref=e10]: ✦
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e101]:
+        - button "‹" [ref=e102]
+        - generic [ref=e103]:
+          - heading "番茄钟" [level=1] [ref=e104]
+          - paragraph [ref=e105]: PomodoroScreen-BTEp3J12.js
+      - generic [ref=e107]:
+        - generic [ref=e108]: 🍅
+        - heading "番茄钟" [level=2] [ref=e109]
+        - paragraph [ref=e110]:
+          - text: 这个页面已经在 reconstructed app registry 中登记，下一步会从
+          - code [ref=e111]: PomodoroScreen-BTEp3J12.js
+          - text: 按真实 bundle 代码逐块重建。
+        - generic [ref=e112]:
+          - term [ref=e113]: screen id
+          - definition [ref=e114]: pomodoro-screen
+          - term [ref=e115]: i18n key
+          - definition [ref=e116]: homeAppPomodoro
+  - generic: Reconstructed shell · 23 apps indexed from bundle

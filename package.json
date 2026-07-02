@@ -1,9 +1,17 @@
 {
   "name": "nuojiji",
   "version": "1.0.0",
+  "type": "module",
   "main": "sw-handlers.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "echo \"No automated tests configured yet\" && exit 0",
+    "inventory:bundle": "node scripts/inventoryBundle.mjs",
+    "inventory:i18n": "node scripts/extractI18n.mjs",
+    "inventory:strings": "node scripts/scanHardcodedStrings.mjs",
+    "inventory:css": "node scripts/inventoryCss.mjs",
     "sync": "node -e \"require('child_process').execSync('sync-to-www.bat', {stdio:'inherit'})\"",
     "android": "npx cap open android",
     "cap:sync": "npx cap sync",
@@ -12,12 +20,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@babel/cli": "^7.29.7",
-    "@babel/core": "^7.29.7",
-    "@babel/preset-react": "^7.29.7"
-  },
+  "description": "Reconstructed React source shell for the nuojiji static mirror.",
   "dependencies": {
     "@capacitor/android": "^8.4.0",
     "@capacitor/app": "^8.1.0",
@@ -28,6 +31,15 @@
     "@capacitor/haptics": "^8.0.2",
     "@capacitor/local-notifications": "^8.2.0",
     "@capacitor/share": "^8.0.1",
-    "@capacitor/status-bar": "^8.0.2"
+    "@capacitor/status-bar": "^8.0.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.29.7",
+    "@babel/core": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.2.8"
   }
 }

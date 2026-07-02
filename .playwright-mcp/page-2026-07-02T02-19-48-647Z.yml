@@ -1,0 +1,195 @@
+- generic [ref=e3]:
+  - banner "NuoOS status bar" [ref=e4]:
+    - generic [ref=e5]: NuoOS
+    - time [ref=e6]: 10:19
+    - generic [ref=e7]:
+      - generic [ref=e8]: ◦
+      - generic [ref=e9]: ▰
+  - button "floating quick console" [ref=e10]: ✦
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e85]:
+        - button "‹" [ref=e86]
+        - generic [ref=e87]:
+          - heading "设置" [level=1] [ref=e88]
+          - paragraph [ref=e89]: ApiSettingsScreen-DonBbfpN.js
+      - generic [ref=e90]:
+        - generic [ref=e91] [cursor=pointer]: 保存
+        - heading "API 设置" [level=1] [ref=e92]
+        - generic [ref=e93]:
+          - heading "API 预设管理" [level=2] [ref=e94]
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: 📚
+              - generic [ref=e99]: 选择预设
+              - combobox "选择预设" [ref=e101] [cursor=pointer]:
+                - option "未选择 (手动输入)" [selected]
+            - generic [ref=e102]:
+              - generic [ref=e103]: ✏️
+              - generic [ref=e105]: 预设名称
+              - textbox "预设名称" [ref=e107]:
+                - /placeholder: "例如: GPT-4 Official"
+            - button "保存为新预设" [ref=e109]
+        - generic [ref=e110]:
+          - heading "主 API (LLM)" [level=2] [ref=e111]
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]: 🧠
+              - generic [ref=e116]: API 类型
+              - combobox "API 类型" [ref=e118] [cursor=pointer]:
+                - option "OpenAI (GPT-3.5/4/4o)" [selected]
+                - option "Google Gemini"
+                - option "Anthropic Claude"
+                - option "自定义 API"
+            - generic [ref=e119]:
+              - generic [ref=e120]: 🔗
+              - generic [ref=e122]: API 地址
+              - textbox "API 地址" [ref=e124]:
+                - /placeholder: https://api.openai.com
+            - generic [ref=e125]:
+              - generic [ref=e126]: 🔑
+              - generic [ref=e128]: API 密钥
+              - textbox "API 密钥" [ref=e130]:
+                - /placeholder: sk-...
+            - generic [ref=e131]:
+              - generic [ref=e132]: 🤖
+              - generic [ref=e134]: 选择模型
+              - textbox "选择模型" [ref=e136]:
+                - /placeholder: 请先拉取模型或手动输入
+                - text: gpt-3.5-turbo
+            - generic [ref=e137]:
+              - button "拉取模型" [ref=e138]
+              - button "链接测试" [ref=e139]
+            - button "重置流式黑名单" [ref=e140] [cursor=pointer]:
+              - generic [ref=e141]: ♻️
+              - generic [ref=e142]: 重置流式黑名单
+            - generic [ref=e143]:
+              - generic [ref=e144]: 🌡️
+              - generic [ref=e146]: 温度 (Temperature)
+              - generic [ref=e148]:
+                - slider "温度 (Temperature) 0.7" [ref=e149]: "0.7"
+                - generic [ref=e150]: "0.7"
+            - generic [ref=e151]:
+              - generic [ref=e152]: 💭
+              - generic [ref=e154]: 推理深度 (Thinking)
+              - combobox "推理深度 (Thinking)" [ref=e156] [cursor=pointer]:
+                - option "关闭 (最快)" [selected]
+                - option "低 (快速)"
+                - option "中 (平衡)"
+                - option "高 (最佳质量)"
+        - generic [ref=e157]:
+          - heading "副 API 链接" [level=2] [ref=e158]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]: 🔀
+              - generic [ref=e163]: 启用副 API
+              - switch "启用副 API" [checked] [active] [ref=e165] [cursor=pointer]
+            - generic [ref=e276]:
+              - generic [ref=e277]: 📌
+              - generic [ref=e278]:
+                - generic [ref=e279]: 跟随主预设切换
+                - generic [ref=e280]: 关闭时，切换或保存主 API 预设不会动到副 API 设置（推荐关闭，避免误覆盖）。
+              - switch "跟随主预设切换 关闭时，切换或保存主 API 预设不会动到副 API 设置（推荐关闭，避免误覆盖）。" [ref=e282] [cursor=pointer]
+            - generic [ref=e284]:
+              - generic [ref=e285]: 🔗
+              - generic [ref=e287]: 副 API 地址
+              - textbox "副 API 地址" [ref=e289]:
+                - /placeholder: https://api.openai.com
+            - generic [ref=e290]:
+              - generic [ref=e291]: 🔑
+              - generic [ref=e293]: 副 API 密钥
+              - textbox "副 API 密钥" [ref=e295]:
+                - /placeholder: sk-...
+            - generic [ref=e296]:
+              - generic [ref=e297]: 🤖
+              - generic [ref=e299]: 选择副模型
+              - textbox "选择副模型" [ref=e301]:
+                - /placeholder: 请先拉取模型或手动输入
+                - text: gpt-4
+            - generic [ref=e302]:
+              - button "拉取模型" [ref=e303]
+              - button "链接测试" [ref=e304]
+            - generic [ref=e305]:
+              - generic [ref=e306]: 🌡️
+              - generic [ref=e308]: 副 API 温度
+              - generic [ref=e310]:
+                - slider "副 API 温度 0.7" [ref=e311]: "0.7"
+                - generic [ref=e312]: "0.7"
+        - generic [ref=e167]:
+          - heading "识图 API" [level=2] [ref=e168]
+          - generic [ref=e170]:
+            - generic [ref=e171]: 👁️
+            - generic [ref=e172]:
+              - generic [ref=e173]: 启用识图 API
+              - generic [ref=e174]: 用一个支持视觉的模型接管全部图片识别（表情包内容、聊天图片、头像）。未启用时回落主 API。建议填一个便宜的多模态模型省钱。
+            - switch "启用识图 API 用一个支持视觉的模型接管全部图片识别（表情包内容、聊天图片、头像）。未启用时回落主 API。建议填一个便宜的多模态模型省钱。" [ref=e176] [cursor=pointer]
+        - generic [ref=e178]:
+          - heading "自动重试" [level=2] [ref=e179]
+          - generic [ref=e180]:
+            - paragraph [ref=e181]: 付费 API 按 token 计费。关闭自动重试可避免请求失败时重复扣费，但需要你手动点重试。
+            - generic [ref=e182]:
+              - generic [ref=e183]: 🔁
+              - generic [ref=e185]: 失败自动重试
+              - switch "失败自动重试" [checked] [ref=e187] [cursor=pointer]
+            - generic [ref=e189]:
+              - generic [ref=e190]: "#"
+              - generic [ref=e192]: 最大重试次数
+              - combobox "最大重试次数" [ref=e194] [cursor=pointer]:
+                - option "不重试"
+                - option "1 次（建议）" [selected]
+                - option "2 次"
+                - option "3 次"
+            - generic [ref=e195]:
+              - generic [ref=e196]: 🔀
+              - generic [ref=e198]: 主 API 失败时自动切副 API
+              - switch "主 API 失败时自动切副 API" [checked] [ref=e200] [cursor=pointer]
+        - generic [ref=e202]:
+          - heading "语音生成" [level=2] [ref=e203]
+          - generic [ref=e205]:
+            - generic [ref=e206]: 🔊
+            - generic [ref=e208]: 启用语音生成
+            - switch "启用语音生成" [ref=e210] [cursor=pointer]
+        - generic [ref=e212]:
+          - heading "图像生成" [level=2] [ref=e213]
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]: 📖
+              - generic [ref=e218]: 启用核心设定世界书
+              - switch "启用核心设定世界书" [checked] [ref=e220] [cursor=pointer]
+            - generic [ref=e222]:
+              - generic [ref=e223]: "N"
+              - generic [ref=e225]: 启用 NovelAI
+              - switch "启用 NovelAI" [ref=e227] [cursor=pointer]
+            - generic [ref=e229]:
+              - generic [ref=e230]: P
+              - generic [ref=e232]: 启用 Pollinations
+              - switch "启用 Pollinations" [ref=e234] [cursor=pointer]
+            - generic [ref=e236]:
+              - generic [ref=e237]: G
+              - generic [ref=e239]: 启用 Google Imagen
+              - switch "启用 Google Imagen" [ref=e241] [cursor=pointer]
+            - generic [ref=e243]:
+              - generic [ref=e244]: ◇
+              - generic [ref=e246]: 启用 Gemini Image
+              - switch "启用 Gemini Image" [ref=e248] [cursor=pointer]
+            - generic [ref=e250]:
+              - generic [ref=e251]: 𝕏
+              - generic [ref=e253]: 启用 Grok
+              - switch "启用 Grok" [ref=e255] [cursor=pointer]
+            - generic [ref=e257]:
+              - generic [ref=e258]: GPT
+              - generic [ref=e260]: 启用 GPT (OpenAI)
+              - switch "启用 GPT (OpenAI)" [ref=e262] [cursor=pointer]
+        - generic [ref=e264]:
+          - heading "数据管理" [level=2] [ref=e265]
+          - generic [ref=e266]:
+            - button "导入备份" [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]: ⬇️
+              - generic [ref=e269]: 导入备份
+            - button "导出备份" [ref=e270] [cursor=pointer]:
+              - generic [ref=e271]: ⬆️
+              - generic [ref=e272]: 导出备份
+            - button "清除数据" [ref=e273] [cursor=pointer]:
+              - generic [ref=e274]: 🧹
+              - generic [ref=e275]: 清除数据
+  - generic: Reconstructed shell · 23 apps indexed from bundle
